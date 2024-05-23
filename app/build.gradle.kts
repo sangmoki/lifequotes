@@ -33,6 +33,7 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    // 데이터 바인딩을 위한 라이브러리 추가
     dataBinding {
         isEnabled = true
     }
