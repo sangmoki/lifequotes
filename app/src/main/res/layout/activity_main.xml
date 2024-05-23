@@ -15,11 +15,12 @@
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_margin="20dp"
-            android:text="전체명언보기"
+            android:text="전체 명언 보기"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:id="@+id/sentenceTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
