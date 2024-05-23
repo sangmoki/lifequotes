@@ -18,7 +18,12 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        binding.showAllSentenceBtn.setOnClickListener {
 
+            var intent = Intent(this, SentenceActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }
