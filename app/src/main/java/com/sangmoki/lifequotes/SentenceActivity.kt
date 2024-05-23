@@ -30,7 +30,7 @@ class SentenceActivity : AppCompatActivity() {
 
         // sentenceList를 ListViewAdapter에 연결
         val sentenceAdapter = ListViewAdapter(sentenceList)
-        
+
         // ListView에 Adapter 연결
         val listview = findViewById<ListView>(R.id.sentenceListView)
 
