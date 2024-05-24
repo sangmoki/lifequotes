@@ -33,7 +33,14 @@ class SentenceActivity : AppCompatActivity() {
 
         // ListView에 Adapter 연결
         val listview = findViewById<ListView>(R.id.sentenceListView)
-
         listview.adapter = sentenceAdapter
+
+        // ListView의 아이템 클릭 시 SentenceDetailActivity로 이동
+        listview.setOnItemClickListener { parent, view, position, id ->
+            val intent = Intent(this, SentenceDetailActivity::class.java)
+            intent.putExtra("sentence", sentenceList[position])
+            startActivity(intent)
+        }
+
     }
 }

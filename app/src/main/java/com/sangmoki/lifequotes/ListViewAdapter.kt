@@ -1,5 +1,6 @@
 package com.sangmoki.lifequotes
 
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
@@ -23,10 +24,10 @@ class ListViewAdapter(val List: MutableList<String>) : BaseAdapter() {
         var convertView = convertView
 
         if (convertView == null) {
-            convertView = View.inflate(parent!!.context, R.layout.list_view_item, null)
+            convertView = LayoutInflater.from(parent?.context).inflate(R.layout.list_view_item, parent, false)
         }
 
-        val listviewText = convertView?.findViewById<TextView>(R.id.listViewItemTextView)
+        val listviewText = convertView!!.findViewById<TextView>(R.id.listViewItemTextView)
         listviewText!!.text = List[position]
 
         return convertView!!
