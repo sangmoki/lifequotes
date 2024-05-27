@@ -29,6 +29,7 @@ class SentenceDetailActivity : AppCompatActivity(){
         binding.sentenceDetailView.setText(sentence)
 
         // 전체 명언 보기 버튼 클릭 시 SentenceActivity로 이동
+        // 액티비티 이동 시 이벤트 발생
         binding.showAllSentenceBtn.setOnClickListener {
             var intent = Intent(this, SentenceActivity::class.java)
             startActivity(intent)
