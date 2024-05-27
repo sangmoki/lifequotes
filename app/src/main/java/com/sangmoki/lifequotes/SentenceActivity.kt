@@ -26,7 +26,9 @@ class SentenceActivity : AppCompatActivity() {
         sentenceList.add("승자는 눈을 밟아 길을 만들지만 패자는 눈이 녹기를 기다린다.")
         sentenceList.add("두 개의 화살을 갖지 마라. 두 번째 화살이 있기 때문에 첫 번째 화살에 집중하지 않게 된다.")
         sentenceList.add("그 사람 입장에 서기 전까지 절대 그 사람을 욕하거나 책망하지 마라.")
-        sentenceList.add("뛰어난 말에게도 채찍이 필요하다.")
+        sentenceList.add("가는 말이 고와야 오는 말도 곱다.")
+        sentenceList.add("내일은 내일의 태양이 뜬다.")
+        sentenceList.add("피할수 없으면 즐겨라.")
 
         // sentenceList를 ListViewAdapter에 연결
         val sentenceAdapter = ListViewAdapter(sentenceList)
