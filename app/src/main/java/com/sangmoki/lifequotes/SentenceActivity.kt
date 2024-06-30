@@ -31,6 +31,7 @@ class SentenceActivity : AppCompatActivity() {
         sentenceList.add("피할수 없으면 즐겨라.")
         sentenceList.add("마음만을 가지고 있어서는 안된다. 반드시 실천하여야 한다.")
         sentenceList.add("최고에 도달하려면 최저에서 시작하라.")
+        sentenceList.add("일하여 얻으라 . 그러면 운명의 바퀴를 붙들어 잡은것이다.")
 
         // sentenceList를 ListViewAdapter에 연결
         val sentenceAdapter = ListViewAdapter(sentenceList)
